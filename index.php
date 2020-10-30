@@ -1,13 +1,14 @@
 <html>
-    <html>
-        <title>Hello world</title>
     <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>Hello world</title>
+    </head>
+    
     <body>
         <h1>My First Website</h1>
         <img src="me.jpg">
         <br>
-        <a href="https://www.facebook.com/miura.mi.372//">my contact <Link></a>
+        <a href="https://www.facebook.com/miura.mi.372//">my contact</a>
 
         
         <ul>
