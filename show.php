@@ -34,12 +34,5 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<?php
-require('show.php');
-$id=$_REQUEST['id'];
-$query = "DELETE FROM new_record WHERE id=$id"; 
-$result = mysqli_query($con,$query) or die ( mysqli_error());
-header("Location: show.php"); 
-?>
 </body>
 </html>
