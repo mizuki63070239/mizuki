@@ -33,6 +33,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href ="https://mizuki01.azurewebsites.net/form.html" style="text-align:center;"><input type="button" value="เพิ่ม"></a>
+<a href ="https://mizuki01.azurewebsites.net/form.html"><input type="button" value="เพิ่ม" style="text-align:center;"></a>
 </body>
 </html>
