@@ -34,5 +34,10 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 <a href ="https://mizuki01.azurewebsites.net/form.html"><input type="button" value="เพิ่ม"></a>
+<div class="container">
+  <div class="center">
+    <button>Centered Button</button>
+  </div>
+</div>
 </body>
 </html>
