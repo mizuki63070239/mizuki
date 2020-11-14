@@ -7,8 +7,8 @@ include("connect.php");
     $name = $_POST['name'];
     $comment = $_POST['comment'];
  if(isset($_POST['submit'])){
-
-    $update = "UPDATE guestbook SET Name = '".$name."', Comment = '".$comment."' WHERE guestbook.`ID` = '".$id."';";
+    
+    $update = "UPDATE guestbook SET Name = '".$name."', Comment = '".$comment."' WHERE guestbook.`ID` = '".$id."';";  
     $result= mysqli_query($conn,$update);
     if($result){
         echo "<script>alert('แก้ไขเสร็จสิ้น')</script>";
@@ -36,9 +36,9 @@ include("connect.php");
     <input type="text" name = "name" value="<?php echo $res['Name'];?>"> <br>
     Comment:<br>
     <input type="text" name="comment" value="<?php echo $res['Comment'];?>"><br>
-
+    
     <input type="submit" name="submit">
-  </form>
+  </form> 
     </body>
-
+    
 </html>
