@@ -1,4 +1,4 @@
-<?php
+?php
 
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'mizuki01.mysql.database.azure.com', 'mizuki@mizuki01', 'Miura260344', 'itflab', 3306);
@@ -17,10 +17,12 @@ $sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+     echo "<script>alert('New record created successfully')</script>";
+      echo "<script>window.location='show.php'</script>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-
+  
 mysqli_close($conn);
+?>
 ?>
