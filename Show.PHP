@@ -19,7 +19,7 @@ include('connect.php');
 
   <tbody>
 <?php
-$sql="SELECT * FROM Nalunya;"
+$sql="SELECT * FROM mi;"
 $result=mysqli_query($conn,$sql);
 if(mysqli_num_rows($result) > 0){
 while(mysqli_fetch_array($result)){
